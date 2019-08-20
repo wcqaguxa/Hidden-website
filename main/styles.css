@@ -3,7 +3,15 @@ body {
     background-color: #554665;
     color: #CD96C6;
     font-family: itim;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+ html {
+     background-color: #392B48;
+ }
 
 @font-face {
     font-family: itim;
@@ -11,5 +19,29 @@ body {
 }
 
 footer {
-    background-color: black;
+    background-color: #392B48;
+}
+
+#socmedia {
+    text-align: right;
+    background-color: #392B48;
+}
+
+header{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+}
+
+header img{
+    max-width:100%;
+    max-height:100%
+}
+
+#menu {
+    background-color: #392B48;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
