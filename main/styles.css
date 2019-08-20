@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: #554665;
+    color: #CD96C6;
+    font-family: itim;
+}
+
+@font-face {
+    font-family: itim;
+    src: url("../resources/fonts/Itim.ttf");
+}
+
+footer {
+    background-color: black;
+}
