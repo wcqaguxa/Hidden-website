@@ -1,14 +1,18 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 html {
     background-color: #392B48;
 }
 
 body {
+    /* Structure   */
+    margin: 10px auto 100px;
+
     /* Style */
     text-align: center;
-    background-color: #554665;
+    background: #554665 url("../resources/images/background.png");
     color: #CD96C6;
     font-family: itim;
-    margin: 20px auto 300px;
 
 }
 
@@ -16,62 +20,105 @@ body {
     font-family: itim;
     src: url("../resources/fonts/Itim.ttf");
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/*~~~~~~~~~~~HEADER~~~~~~~~~~~ */
 header{
     display: block;
     margin-left:auto;
     margin-right: auto;
-    width:50%;
+    width: 40%;
     position: relative;
-    right: 10%;
+    right: 31%;
 }
 
 header img{
-    max-width:100%;
-    max-height:100%;
-    min-width:600px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 500px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*~~~~~~~~~~~FOOTER~~~~~~~~~~~ */
 footer {
     background-color: #392B48;
+    padding-top: 30px;
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/*Social Media*/
 
 #socmedia {
     text-align: right;
     background-color: #392B48;
+    padding-right: 10px;
 }
+
+#socmedia img, #socmediabottom img{
+    width: 50px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+
+#socmedia img:hover, #socmediabottom img:hover{
+    width:60px;
+}
+
+/*~~~~~~*/
+
+/*Navigation*/
+#navtop img, #navbottom img{
+    width:90px;
+}
+
+#navtop img:hover, #navbottom img:hover{
+    width: 100px;
+}
+/*~~*/
 
 #menu {
     /* Structure */
     display: inline-flex;
     justify-content: space-evenly;
     padding: /*ver*/ 10px /*hor*/ 15px;
-    width:80%;
-    min-width:400px;
-
-    /* Position */
-    position: relative;
-    bottom: 100px;
-    left: 42%;
+    margin-bottom: 20px;
+    width:60%;
+    min-width:500px;
 
     /* Style */
     background-color: #392B48;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 20px 20px 20px 20px;
 }
 
+#menu a:hover{
+    font-size: 30px;
+}
+
 #middle{
-    background-color: black;
+    /*Structure*/
     width:60%;
     min-width:600px;
     margin-left: auto;
     margin-right:auto;
     padding: 20px 20px 20px 20px;
+
+    /*Position*/
+    position: relative;
+    bottom:10%;
+
+    /*Style*/
+    background-color: black;
     border-radius: 40px 40px 40px 40px;
+
 }
 
-#comicbody img{
+a:hover{
+    cursor:pointer;
+}
+
+#comicbody img {
     max-width:100%;
     max-height:100%;
 }
