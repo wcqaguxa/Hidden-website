@@ -1,30 +1,20 @@
+html {
+    background-color: #392B48;
+}
+
 body {
+    /* Style */
     text-align: center;
     background-color: #554665;
     color: #CD96C6;
     font-family: itim;
-    margin-top: 20px;
-    margin-bottom: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 300px;
 
 }
- html {
-     background-color: #392B48;
- }
 
 @font-face {
     font-family: itim;
     src: url("../resources/fonts/Itim.ttf");
-}
-
-footer {
-    background-color: #392B48;
-}
-
-#socmedia {
-    text-align: right;
-    background-color: #392B48;
 }
 
 header{
@@ -40,6 +30,16 @@ header img{
     max-width:100%;
     max-height:100%;
     min-width:600px;
+}
+
+footer {
+    background-color: #392B48;
+}
+
+
+#socmedia {
+    text-align: right;
+    background-color: #392B48;
 }
 
 #menu {
@@ -61,11 +61,6 @@ header img{
     border-radius: 20px 20px 20px 20px;
 }
 
-/* #menu a {
-    margin-right: 15px;
-    margin-left: 15px;
-} */
-
 #middle{
     background-color: black;
     width:60%;
@@ -73,6 +68,7 @@ header img{
     margin-left: auto;
     margin-right:auto;
     padding: 20px 20px 20px 20px;
+    border-radius: 40px 40px 40px 40px;
 }
 
 #comicbody img{
