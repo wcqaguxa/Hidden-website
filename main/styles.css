@@ -43,20 +43,28 @@ header img{
 }
 
 #menu {
-    background-color: #392B48;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:10px;
-    padding-bottom:10px;
-    font-size: 20px;
-    display:flex;
+    /* Structure */
+    display: inline-flex;
     justify-content: space-evenly;
-    border-radius: 20px 20px 20px 20px;
-    position:relative;
+    padding: /*ver*/ 10px /*hor*/ 15px;
+    width:80%;
+    min-width:400px;
+
+    /* Position */
+    position: relative;
     bottom: 100px;
-    left: 40%;
+    left: 42%;
+
+    /* Style */
+    background-color: #392B48;
+    font-size: 20px;
+    border-radius: 20px 20px 20px 20px;
 }
+
+/* #menu a {
+    margin-right: 15px;
+    margin-left: 15px;
+} */
 
 #middle{
     background-color: black;
