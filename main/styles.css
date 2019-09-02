@@ -59,6 +59,7 @@ footer {
     width: 50px;
     margin-left: 5px;
     margin-right:5px;
+    transition: width 500ms;
 }
 
 #socmedia img:hover, #socmediabottom img:hover{
@@ -70,6 +71,7 @@ footer {
 /*Navigation*/
 #navtop img, #navbottom img{
     width:90px;
+    transition: width 500ms;
 }
 
 #navtop img:hover, #navbottom img:hover{
