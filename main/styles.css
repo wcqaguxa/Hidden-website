@@ -29,7 +29,6 @@ header{
     margin-right: auto;
     width: 40%;
     position: relative;
-    right: 31%;
 }
 
 header img{
@@ -108,7 +107,6 @@ footer {
 
     /*Position*/
     position: relative;
-    bottom:10%;
 
     /*Style*/
     background-color: black;
