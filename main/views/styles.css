@@ -10,7 +10,7 @@ body {
 
     /* Style */
     text-align: center;
-    background: #554665 url("../resources/images/background.png");
+    background: #554665 url("images/background.png");
     color: #CD96C6;
     font-family: itim;
 
@@ -18,7 +18,7 @@ body {
 
 @font-face {
     font-family: itim;
-    src: url("../resources/fonts/Itim.ttf");
+    src: url("../../resources/fonts/Itim.ttf");
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
