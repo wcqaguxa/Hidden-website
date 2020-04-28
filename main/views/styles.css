@@ -73,8 +73,12 @@ footer {
     transition: width 500ms;
 }
 
-#navtop img:hover, #navbottom img:hover{
+#navtop img:not(.inactive):hover, #navbottom img:not(.inactive):hover{
     width: 100px;
+}
+
+.inactive {
+    opacity: 0.5;
 }
 /*~~*/
 

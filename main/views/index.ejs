@@ -6,9 +6,6 @@
     </head>
 
     <body>
-        <script>
-            let pageNum = 2;
-        </script>
         <nav id="socmedia">
             <a> <img src="images/facebook.png" alt="Facebook" > </a>
             <a> <img src="images/patreon.png" alt="Patreon" > </a>
@@ -33,10 +30,19 @@
                 <!-- TODO: tu będą about cast archive linki, ale to zrobię cssem -->
             </nav>
             <nav id="navtop">
-                <a> <img src="images/first.png" alt="First page"> </a>
-                <a> <img src="images/previous.png" alt="Previous page"> </a>
-                <a> <img src="images/next.png" alt="Next page"> </a>
-                <a> <img src="images/last.png" alt="Last page"> </a>
+                <% if (first) {%>
+                    <img class="inactive" src="images/first.png" alt="First page">
+                    <img class="inactive" src="images/previous.png" alt="Previous page">
+                <% } else { %>
+                    <a href="/page/0" > <img src="images/first.png" alt="First page"> </a>
+                    <a href="/page/<%=prevP%>"> <img src="images/previous.png" alt="Previous page"> </a>
+                <% } if (last) {%>
+                    <img class="inactive" src="images/next.png" alt="Next page">
+                    <img class="inactive" src="images/last.png" alt="Last page">
+                <% } else { %>
+                    <a href="/page/<%=nextP%>"> <img src="images/next.png" alt="Next page"> </a>
+                    <a href="/page/<%=lastP%>"> <img src="images/last.png" alt="Last page"> </a>
+                <% } %>
             </nav>
             <div id="comicbody">
                  <!-- TODO: zrobić stronę progressbar. to jest ta część która się zmienia przyciskami -->
@@ -44,10 +50,19 @@
             </div>
 
             <nav id="navbottom">
-                <a> <img src="images/first.png" alt="First page"> </a>
-                <a> <img src="images/previous.png" alt="Previous page"> </a>
-                <a> <img src="images/next.png" alt="Next page"> </a>
-                <a> <img src="images/last.png" alt="Last page"> </a>
+                <% if (first) {%>
+                    <img class="inactive" src="images/first.png" alt="First page">
+                    <img class="inactive" src="images/previous.png" alt="Previous page">
+                <% } else { %>
+                    <a> <img src="images/first.png" alt="First page"> </a>
+                    <a> <img src="images/previous.png" alt="Previous page"> </a>
+                <% } if (last) {%>
+                    <img class="inactive" src="images/next.png" alt="Next page">
+                    <img class="inactive" src="images/last.png" alt="Last page">
+                <% } else { %>
+                    <a> <img src="images/next.png" alt="Next page"> </a>
+                    <a> <img src="images/last.png" alt="Last page"> </a>
+                <% } %>
             </nav>
             <div id="content">
                 <!--  TODO: PÓŹNIEJ ogarnąć jak trzymać te posty, w json??? -->
