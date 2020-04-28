@@ -15,16 +15,15 @@ app.use(express.static(__dirname + '/views'));
 app.set('view engine', 'ejs');
 
 //should I ask about it in a different way?
-http.createServer(app).listen(port, function() {
+let server = http.createServer(app).listen(port, function() {
     console.log("Listening on port: "+port);
 });
 
 //getting the proper page. if its a number, it's a page.
-app.get('/\\/page\\/(\\d)+(\\/*)*/', function(req, res) {
-    const path = url.parse(req, true).pathname.split("/");
-    console.log("pathname is: "+path);
+app.get('/page/:id(\\d+)', function(req, res) {
+    console.log("pathname is: "+req.url);
 
-    let pageNum = parseInt(path[1]);
+    let pageNum = parseInt(req.params.id);
     if (pageNum >= pagesTable.length) {
         //error
         console.log("Error. Page number too high: " + pageNum);
@@ -35,8 +34,6 @@ app.get('/\\/page\\/(\\d)+(\\/*)*/', function(req, res) {
              first: pageNum === 0, last: pageNum === pagesTable.length-1,
         prevP: pageNum-1, nextP: pageNum+1, lastP:pagesTable.length-1} );
     console.log("Page url sent.");
-
-    res.send();
 });
 
 //serves the first page. when start posting, change to last page
@@ -48,6 +45,6 @@ app.get('/', function(req, res) {
 
 //serves the first page. when start posting, change to last page
 app.get('/*', function(req, res) {
-    const toPrint = url.parse(req, true).pathname
-    console.log(toPrint);
+    const toPrint = url.parse(req.url, true).pathname
+    console.log(toPrint+" not found");
 });
